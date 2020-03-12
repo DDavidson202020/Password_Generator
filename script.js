@@ -5,13 +5,13 @@ var generateBtn = document.querySelector("#generate");
 
 
     
-  
+  var password ="";
   function generatePassword() {
     // prompt user to choose a password length from 8 to 128 characters
     var userInput1 = prompt("Password must have a length of at least 8 characters and no more than 128 characters. How many characters would you like for your password?");
     var userLength = parseInt(userInput1);
     var characters =[];
-    var password ="";
+    
     
     // Check if user's input is from 8 to 128 characters
     if (userLength > 7 && userLength < 129) {
